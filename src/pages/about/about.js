@@ -16,9 +16,15 @@ export default function AboutInclude() {
 			<Logo />
 
 			<div className="version-info">
-				<h1 className="version-title">Acode editor</h1>
+				<h1 className="version-title">AeroCode Studio</h1>
 				<div className="version-number">
 					Version {BuildInfo.version} ({BuildInfo.versionCode})
+				</div>
+				<div style={{ marginTop: "8px", fontSize: "14px", color: "var(--accent-color, #81a1c1)", fontWeight: "600" }}>
+					Developed & Customized by Shahid
+				</div>
+				<div style={{ fontSize: "12px", opacity: 0.8, marginTop: "4px" }}>
+					AI-Powered Web & App IDE with Antigravity CLI Agent
 				</div>
 			</div>
 
@@ -41,22 +47,22 @@ export default function AboutInclude() {
 						<div className="info-item-subtext">{webviewPackageName}</div>
 					</div>
 				</a>
-				<a href={config.BASE_URL} className="info-item">
+				<a href="https://github.com/mdshahiid09-bit/AeroCode" className="info-item">
 					<div className="info-item-icon">
-						<span className="icon acode"></span>
+						<span className="icon github"></span>
 					</div>
 					<div className="info-item-text">
-						Official webpage
-						<div className="info-item-subtext">{config.BASE_URL}</div>
+						AeroCode Repository
+						<div className="info-item-subtext">github.com/mdshahiid09-bit/AeroCode</div>
 					</div>
 				</a>
-				<a href={config.FOXBIZ_URL} className="info-item">
+				<a href="#" className="info-item" onclick={(e) => { e.preventDefault(); alert("AeroCode: Powered by Antigravity CLI & Google DeepMind"); }}>
 					<div className="info-item-icon">
-						<span className="icon foxbiz"></span>
+						<span className="icon zap"></span>
 					</div>
 					<div className="info-item-text">
-						Foxbiz Software Pvt. Ltd.
-						<div className="info-item-subtext">{config.FOXBIZ_URL}</div>
+						Antigravity AI Agent Engine
+						<div className="info-item-subtext">Autonomous Web & App Builder</div>
 					</div>
 				</a>
 			</div>

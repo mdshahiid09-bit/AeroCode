@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.foxdebug.acode" android-versionCode="1011" version="1.13.5"
+<widget id="com.aerocode.studio" android-versionCode="1011" version="1.13.5"
     xmlns="http://www.w3.org/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Acode</name>
+    <name>AeroCode</name>
     <description>
-        Light weight code editor and web IDE for android.
+        AeroCode - AI-Powered Code Editor and Web IDE for Android with Antigravity CLI Agent.
     </description>
-    <author email="ajit@foxdebug.com" href="https://foxdebug.com">
-        Foxdebug
+    <author email="mdshahiid09@gmail.com" href="https://github.com/mdshahiid09-bit/AeroCode">
+        Shahid
     </author>
     <content src="index.html" />
     <access launch-external="yes" origin="*" />
