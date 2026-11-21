@@ -46,8 +46,21 @@ jobs:
           cordova platform add android || true
           cordova build android --debug
 
-      - name: Upload APK to Release
+      - name: Rename APK
+        run: |
+          mkdir -p build-output
+          cp platforms/android/app/build/outputs/apk/debug/*.apk build-output/AeroCode-v1.0.0.apk || true
+
+      - name: Upload APK to GitHub Release v1.0.0
         uses: softprops/action-gh-release@v2
-        if: github.event_name == 'release'
         with:
-          files: platforms/android/app/build/outputs/apk/debug/*.apk
+          tag_name: v1.0.0
+          files: build-output/AeroCode-v1.0.0.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AeroCode-v1.0.0-APK
+          path: build-output/AeroCode-v1.0.0.apk
