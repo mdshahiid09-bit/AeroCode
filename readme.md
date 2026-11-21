@@ -1,24 +1,22 @@
-# Acode - Code Editor for Android
+# AeroCode - AI-Powered Code Editor & Web IDE for Android
+> **Created & Customized by Shahid** • Powered by Antigravity AI Agent Engine
 
 <p align="center">
-  <img src='res/logo_1.png' width='250'>
+  <img src='res/logo_1.png' width='220'>
 </p>
-
-[![](https://img.shields.io/endpoint?logo=telegram&label=Acode&style=flat&url=https%3A%2F%2Facode.app%2Fapi%2Ftelegram-members-count)](https://t.me/foxdebug_acode) [![](https://dcbadge.limes.pink/api/server/https://discord.gg/vVxVWYUAWD?style=flat)](https://discord.gg/vVxVWYUAWD)
 
 ## • Overview
 
-Welcome to Acode Editor - a powerful and versatile code editing tool designed specifically for Android devices. Whether you're working on HTML, CSS, JavaScript, or other programming languages, Acode empowers you to code on-the-go with confidence.
+Welcome to **AeroCode Studio** — an autonomous AI-powered code editor and web IDE designed specifically for Android. With native **Antigravity CLI Agent** integration, you can build, write, debug, and preview complete HTML/CSS/JavaScript and React + Vite applications directly on your phone simply by typing prompts.
 
-## • Features
+## • Key Highlights & AI Features
 
-- Edit and create websites, and instantly preview them in a browser.
-- Seamlessly modify source files for various languages like Python, Java, JavaScript, and more.
-- Built-in javascript console
-- S/FTP and SSH terminal integration
-- Built-in terminal(Alpine)
-- Enjoy multi-language editing support with easy management tools.
-- Enjoy a large collections of community plugins to enhance your coding experience.
+- ⚡ **Antigravity AI Agent Sidebar:** Chat with the autonomous AI agent directly inside the editor.
+- 📁 **Live Autonomous File Creation:** Creates files, directories, components, and configs live in your project.
+- 🛠️ **In-Editor Code Reading & Debugging:** Agent reads your existing code, detects bugs, and applies precise edits.
+- 🌐 **Instant Live Preview:** Test your HTML/JS and React apps with one click.
+- 🚀 **Projects Manager:** Switch between projects or initialize new Vanilla / React Vite boilerplates effortlessly.
+- 📱 **Lightweight & Fast:** Runs smoothly on Android devices.
 
 ## • Installation
 
