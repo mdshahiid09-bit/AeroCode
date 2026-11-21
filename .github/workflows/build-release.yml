@@ -23,9 +23,6 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -42,7 +39,10 @@ jobs:
           npx rspack --mode production
 
       - name: Build Android APK
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
         run: |
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
           cordova platform add android || true
           cordova build android --debug
 
